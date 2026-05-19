@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Учет транзакций</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Учет транзакций</h1>
+
+        <!-- Форма добавления -->
+        <form id="transaction-form">
+            <input type="number" id="amount" placeholder="Сумма (н-р: 500 или -200)" required>
+            <select id="category" required>
+                <option value="">Выберите категорию</option>
+                <option value="Обед">Обед</option>
+                <option value="Зарплата">Зарплата</option>
+                <option value="Транспорт">Транспорт</option>
+                <option value="Развлечения">Развлечения</option>
+            </select>
+            <input type="text" id="description" placeholder="Описание транзакции" required>
+            <button type="submit">Добавить</button>
+            <p id="form-error" class="error-text"></p>
+        </form>
+
+        <!-- Баланс -->
+        <div class="total-container">
+            <h3>Общий баланс: <span id="total-amount">0</span> ₽</h3>
+        </div>
+
+        <!-- Таблица транзакций -->
+        <table id="transactions-table">
+            <thead>
+                <tr>
+                    <th>Дата и Время</th>
+                    <th>Категория</th>
+                    <th>Краткое описание</th>
+                    <th>Действие</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Сюда будут динамически добавляться строки -->
+            </tbody>
+        </table>
+
+        <!-- Подробное описание -->
+        <div id="details-block" class="details-hidden">
+            <h3>Подробности транзакции</h3>
+            <p id="details-content">Нажмите на любую транзакцию в таблице, чтобы увидеть полное описание.</p>
+        </div>
+    </div>
+
+    <script  src="src/index.js"></script>
+
+</body>
+</html>

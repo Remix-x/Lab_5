@@ -1,0 +1,17 @@
+body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f6f8; }
+.container { max-width: 800px; margin: 0 auto; }
+form { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+input, select, button { padding: 8px; font-size: 14px; }
+.error-text { color: red; width: 100%; margin: 0; font-size: 13px; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+th { background-color: #edf2f7; }
+
+/* Цвета для строк */
+.row-income { background-color: #e6fffa; color: #234e52; } /* Зеленый */
+.row-expense { background-color: #fff5f5; color: #742a2a; } /* Красный */
+
+.delete-btn { background: #e53e3e; color: white; border: none; padding: 5px 10px; cursor: pointer; border-radius: 4px; }
+#details-block { margin-top: 20px; padding: 15px; border: 1px solid #e2e8f0; background: #fff; border-radius: 6px; }
+.details-hidden { display: none; }
+tr { cursor: pointer; }
